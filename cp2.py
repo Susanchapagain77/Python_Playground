@@ -16,7 +16,7 @@ def caeser(plain_text,shift_amount,caeser_operation):
             new_letter =letters
         end_text +=new_letter
     print(f"The {caeser_operation}d is {end_text}")
-    
+
 while True:   
     text=input("your text\n")
     shift=int(input("shift number:\n"))

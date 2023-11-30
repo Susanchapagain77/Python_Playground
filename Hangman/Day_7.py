@@ -7,7 +7,7 @@ print(logo)
 
 
 word=random.choice(word_lists.word_list)
-print(word)
+#print(word)
 display=[]
 lives=len(word)
 for letter in word:
@@ -23,7 +23,7 @@ while lives != 0:
         input_lists.append(guess_letter)
         if guess_letter not in word:
             lives -=1
-            print(stages[lives])
+            print(stages[lives-1])
             print("That's not in the word. Try again")
         else:
             for guess_position in range (len(word)):
